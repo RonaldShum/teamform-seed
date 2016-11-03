@@ -28,5 +28,23 @@ $(document).ready(function(){
     	}
     });
 
+	     
+      // Initialize Firebase
+       const config = {
+        apiKey: "AIzaSyCw7pPwTqi5mXO84LEfYOVUOI1_UPTTg94",
+    	authDomain: "teapot-576b6.firebaseapp.com",
+	    databaseURL: "https://teapot-576b6.firebaseio.com",
+        storageBucket: "teapot-576b6.appspot.com",
+        messagingSenderId: "955450264497"
+      };
+        firebase.initializeApp(config);
+        
+		//Add login event
+		$("#btnLogin").click(function(){
+			const email = $('#txtEmail').val();
+			const pass = $('#txtPassword').val();
+		});
+	        
+
 
 });
